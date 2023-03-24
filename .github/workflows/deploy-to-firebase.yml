@@ -1,0 +1,23 @@
+name: Deploy to Firebase Hosting
+
+env: 
+  FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+
+jobs:
+  build-and-deploy:
+    name: Build Apps and Deploy to Firebase Hosting
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "18.12.1"
+
+      - name: Install Dependencies
+        run: yarn
+
+      - name: Build Apps
+        run: yarn build
+
+      - name: Deploy to Firebase(test)
+        run:  firebase deploy --token "$FIREBASE_TOKEN"
