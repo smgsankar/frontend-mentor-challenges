@@ -1,0 +1,36 @@
+{
+  "name": "frontend-mentor-challenges",
+  "description": "Mono Repo for Frontend Mentor Challenges using Lerna Workspaces",
+  "repository": "https://github.com/smgsankar/frontend-mentor-challenges.git",
+  "author": "smgsankar",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "challenges/*"
+  ],
+  "scripts": {
+    "start": "lerna run start",
+    "build": "lerna run build"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.5",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "autoprefixer": "^10.4.14",
+    "css-loader": "^6.7.3",
+    "lerna": "^6.6.0",
+    "postcss-loader": "^7.1.0",
+    "postcss-preset-env": "^8.0.1",
+    "style-loader": "^3.3.2",
+    "tailwindcss": "^3.2.7",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.2",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.1"
+  }
+}

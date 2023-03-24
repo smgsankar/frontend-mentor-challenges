@@ -1,1 +1,4 @@
 **/hosting.*
+**/node_modules
+**/yarn.lock
+**/dist
