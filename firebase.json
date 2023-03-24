@@ -1,0 +1,10 @@
+{
+  "hosting": [{
+    "target": "qr-component-fe",
+    "public": "challenges/qr-code-component/dist",
+    "ignore": [
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }]
+}

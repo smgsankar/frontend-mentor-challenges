@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "smgs-fe-mentor-challenges"
+  },
+  "targets": {
+    "smgs-fe-mentor-challenges": {
+      "hosting": {
+        "qr-component-fe": [
+          "qr-component-fe"
+        ]
+      }
+    }
+  }
+}
