@@ -7,6 +7,9 @@
       "hosting": {
         "qr-component-fe": [
           "qr-component-fe"
+        ],
+        "advice-generator-fe": [
+          "advice-generator-fe"
         ]
       }
     }
