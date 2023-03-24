@@ -1,5 +1,5 @@
 {
-  "name": "qr-code-component-main",
+  "name": "qr-code-component",
   "version": "1.0.0",
   "description": "QR Code Component Design from Frontend Mentor Challenges",
   "main": "index.tsx",
