@@ -6,7 +6,7 @@ export function App() {
       <div className="max-w-[330px] bg-white rounded-xl p-4">
         <img className="rounded-lg" src="images/image-qr-code.png" alt="qr-code"/>
         <div className="font-outfit text-center m-6">
-        <div className="font-bold text-[21px] my-2">
+        <div className="font-bold text-blue text-[21px] my-2">
           Improve your front-end skills by building projects
         </div>
         <div className="font-normal text-blue-gray text-[15px]">
