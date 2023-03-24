@@ -1,6 +1,6 @@
 {
   "name": "frontend-mentor-challenges",
-  "description": "Mono Repo for Frontend Mentor Challenges using Lerna Workspaces",
+  "description": "Mono-Repo for Frontend Mentor Challenges using Lerna Workspaces",
   "repository": "https://github.com/smgsankar/frontend-mentor-challenges.git",
   "author": "smgsankar",
   "license": "MIT",
