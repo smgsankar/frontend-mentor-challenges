@@ -73,7 +73,7 @@ Users should be able to:
 
 ### Useful resources
 
-- [CSS Glow](https://codersblock.com/blog/creating-glow-effects-with-css/)
+- [Glow Effect using CSS Box Shadow property](https://codersblock.com/blog/creating-glow-effects-with-css/)
 - [Shadows Tailwind CSS Docs](https://tailwindcss.com/docs/box-shadow)
 
 ## Author
