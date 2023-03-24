@@ -7,3 +7,9 @@ body {
   height: 100%;
   overflow: hidden;
 }
+
+@layer utilities {
+  .highlight-off {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
