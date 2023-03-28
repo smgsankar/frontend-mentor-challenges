@@ -5,11 +5,11 @@ export interface NotificationDataType {
   content: string;
   contentImgUrl: string;
   timeStamp: string;
-  extraData: ExtraData;
+  extraData: ExtraDataType;
   unread: boolean;
 }
 
-export interface ExtraData {
-  type: string;
+export interface ExtraDataType {
+  type: "" | "group" | "post" | "message";
   content: string;
 }

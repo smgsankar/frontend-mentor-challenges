@@ -5,7 +5,7 @@ export const DATA: NotificationDataType[] = [
     id: 1,
     userName: "Mark Webber",
     userDpUrl: "./assets/images/avatar-mark-webber.webp",
-    content: "reacted to your recent post",
+    content: " reacted to your recent post ",
     contentImgUrl: "",
     timeStamp: "1m ago",
     extraData: {
@@ -18,7 +18,7 @@ export const DATA: NotificationDataType[] = [
     id: 2,
     userName: "Angela Gray",
     userDpUrl: "./assets/images/avatar-angela-gray.webp",
-    content: "followed you",
+    content: " followed you ",
     contentImgUrl: "",
     timeStamp: "5m ago",
     extraData: {
@@ -31,7 +31,7 @@ export const DATA: NotificationDataType[] = [
     id: 3,
     userName: "Jacob Thompson",
     userDpUrl: "./assets/images/avatar-jacob-thompson.webp",
-    content: "has joined your group",
+    content: " has joined your group ",
     contentImgUrl: "",
     timeStamp: "1 day ago",
     extraData: {
@@ -44,7 +44,7 @@ export const DATA: NotificationDataType[] = [
     id: 4,
     userName: "Rizky Hasanuddin",
     userDpUrl: "./assets/images/avatar-rizky-hasanuddin.webp",
-    content: "sent you a private message",
+    content: " sent you a private message ",
     contentImgUrl: "",
     timeStamp: "5 days ago",
     extraData: {
@@ -57,7 +57,7 @@ export const DATA: NotificationDataType[] = [
     id: 5,
     userName: "Kimberly Smith",
     userDpUrl: "./assets/images/avatar-kimberly-smith.webp",
-    content: "commented on your picture",
+    content: " commented on your picture ",
     contentImgUrl: "./assets/images/image-chess.webp",
     timeStamp: "1 week ago",
     extraData: {
@@ -70,7 +70,7 @@ export const DATA: NotificationDataType[] = [
     id: 6,
     userName: "Nathan Peterson",
     userDpUrl: "./assets/images/avatar-nathan-peterson.webp",
-    content: "reacted to your recent post",
+    content: " reacted to your recent post ",
     contentImgUrl: "",
     timeStamp: "2 weeks ago",
     extraData: {
@@ -83,7 +83,7 @@ export const DATA: NotificationDataType[] = [
     id: 7,
     userName: "Anna Kim",
     userDpUrl: "./assets/images/avatar-anna-kim.webp",
-    content: "left the group",
+    content: " left the group ",
     contentImgUrl: "",
     timeStamp: "2 weeks ago",
     extraData: {
