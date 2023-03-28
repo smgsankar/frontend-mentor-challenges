@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <style>
+      /* Set up PlusJakartaSans for modern browsers, all weights */
+      @supports (font-variation-settings: normal) {
+        @font-face {
+          font-family: "PlusJakartaSans";
+          src: url("./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf")
+              format("woff2 supports variations"),
+            url("./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf")
+              format("woff2-variations");
+          font-weight: 400 700;
+        }
+      }
+
+      /* Set up PlusJakartaSans for old browsers, only regular + bold */
+      @supports not (font-variation-settings: normal) {
+        @font-face {
+          font-family: PlusJakartaSans;
+          src: url("./assets/fonts/static/PlusJakartaSans-ExtraBold.ttf");
+          font-weight: 700;
+        }
+
+        @font-face {
+          font-family: PlusJakartaSans;
+          src: url("./assets/fonts/static/PlusJakartaSans-Medium.ttf");
+          font-weight: 400;
+        }
+      }
+    </style>
+
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
