@@ -1,9 +1,11 @@
+import { useState } from "react";
 import { NotificationCard } from "./components/NotificationCard";
 import { NotificationsHeader } from "./components/NotificationsHeader";
 import { DATA } from "./store/mockData";
 import "./style.css";
 
 export function App() {
+  const [allRead, setAllRead] = useState(false);
   return (
     <div className="font-plusJakartaSans overflow-y-auto h-screen w-screen">
       <div className="flex flex-row">
@@ -17,14 +19,15 @@ export function App() {
         <div className="bg-very-dark-blue h-10 w-10">.</div>
       </div>
       <NotificationsHeader
+        allRead={allRead}
         newNofificationsCount={DATA.filter((datum) => datum.unread).length}
-        handleMarkAllAsRead={() => {}}
+        handleMarkAllAsRead={setAllRead}
       />
       <main className="flex flex-col gap-6 m-4">
         {DATA.map((datum) => {
           console.log(datum);
           return (
-            <NotificationCard key={datum.id} notification={datum} />
+            <NotificationCard key={datum.id} notification={datum} allRead={allRead} />
           );
         })}
       </main>

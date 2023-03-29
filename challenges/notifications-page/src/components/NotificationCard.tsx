@@ -5,10 +5,11 @@ import { NotificationExtraData } from "./NotificationExtraData";
 
 interface NotificationCardPropsType {
   notification: NotificationDataType;
+  allRead: boolean;
 }
 
 export function NotificationCard(props: NotificationCardPropsType) {
-  const { notification } = props;
+  const { notification, allRead } = props;
   return (
     <div className="flex flex-row gap-4">
       <div className="flex-shrink-0 my-2">
@@ -24,7 +25,7 @@ export function NotificationCard(props: NotificationCardPropsType) {
               <span className="font-bold text-very-dark-blue hover:text-blue cursor-pointer">{notification.userName}</span>
               <span className="text-clip">{notification.content}</span>
               <NotificationExtraData extraData={notification.extraData} />
-              <span className="inline-block bg-red h-2 w-2 mx-[2px] mt-1 rounded-[50%]" />
+              {!allRead && notification.unread && <span className="inline-block bg-red h-2 w-2 mx-[2px] mt-1 rounded-[50%]" />}
             </div>
             {notification.timeStamp}
           </div>
