@@ -10,6 +10,9 @@
         ],
         "advice-generator-fe": [
           "advice-generator-fe"
+        ],
+        "notifications-page-fe": [
+          "notifications-page-fe"
         ]
       }
     }

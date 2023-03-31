@@ -1,18 +1,16 @@
 {
-  "hosting": [{
-    "target": "qr-component-fe",
-    "public": "challenges/qr-code-component/dist",
-    "ignore": [
-      "**/.*",
-      "**/node_modules/**"
-    ]
-  },
-  {
-    "target": "advice-generator-fe",
-    "public": "challenges/advice-generator-app/dist",
-    "ignore": [
-      "**/.*",
-      "**/node_modules/**"
-    ]
-  }]
+  "hosting": [
+    {
+      "target": "qr-component-fe",
+      "public": "challenges/qr-code-component/dist"
+    },
+    {
+      "target": "advice-generator-fe",
+      "public": "challenges/advice-generator-app/dist"
+    },
+    {
+      "target": "notifications-page-fe",
+      "public": "challenges/notifications-page/dist"
+    }
+  ]
 }
