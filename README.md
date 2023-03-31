@@ -2,7 +2,7 @@
 
 A Mono-Repo setup using Lerna workspaces to showcase my submissions to challenges [Frontent Mentor](https://www.frontendmentor.io/) meanwhile experimenting with stuff I pick up along the way
 
-The main idea is to manage the list of challenges from Frontend Mentor in challenges directory. Any code changes in master will trigger a workflow which will deploy the changes to the specific domains thorugh Firebase Hosting
+The main idea is to manage the list of challenges from Frontend Mentor in challenges directory. Any code changes in master will trigger a workflow which will deploy the changes to the specific domains through Firebase Hosting
 
 Challenges Completed so far,
 
