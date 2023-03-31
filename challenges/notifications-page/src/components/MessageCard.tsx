@@ -4,8 +4,8 @@ interface MessageCardPropsType{
 
 export function MessageCard(props: MessageCardPropsType) {
   return (
-    <div>
+    <p className="p-4 border-grayish-blue border-solid border-[0.25px] rounded hover:bg-light-grayish-blue-1 hover:border-transparent">
       {props.message}
-    </div>
+    </p>
   )
 }

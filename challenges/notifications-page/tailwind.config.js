@@ -7,6 +7,10 @@ module.exports = {
       fontFamily: {
         plusJakartaSans: ["PlusJakartaSans"],
       },
+      screens: {
+        mobile: '375px',
+        desktop: '660px',
+      },
       colors: {
         "white": "hsl(0, 0%, 100%)",
         "red": "hsl(1, 90%, 64%)",

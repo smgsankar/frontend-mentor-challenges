@@ -16,11 +16,19 @@ export function NotificationsHeader(props: NotificationsHeaderPropsType) {
   return (
     <header className="flex flex-row justify-between">
       <div className="flex flex-row gap-1">
-        <h1 className="font-bold">Notifications</h1>
-        <span>{notificationCount}</span>
+        <h1 className="text-xl font-bold">Notifications</h1>
+        {!allRead && (
+          <span className="bg-blue inline-block px-2 rounded text-light-grayish-blue-1">
+            {notificationCount}
+          </span>
+        )}
       </div>
       {!allRead && (
-        <button type="button" onClick={onMarkAsReadClick}>
+        <button
+          type="button"
+          onClick={onMarkAsReadClick}
+          className="text-dark-grayish-blue hover:text-blue"
+        >
           Mark all as read
         </button>
       )}

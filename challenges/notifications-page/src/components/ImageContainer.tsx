@@ -6,5 +6,9 @@ interface ImageContainerPropsType {
 
 export function ImageContainer(props: ImageContainerPropsType) {
   const { src, alt, className } = props;
-  return <img className={`h-14 w-14 ${className !== undefined && className}`} src={src} alt={alt} />
+  return (
+    <div className={`flex-shrink-0 ${className}`}>
+      <img className={`h-14 w-14`} src={src} alt={alt} />
+    </div>
+  );
 }
