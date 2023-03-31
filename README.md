@@ -8,6 +8,7 @@ Challenges Completed so far,
 
 * [QR Code Component](https://qr-component-fe.web.app/)
 * [Advice Generator](https://advice-generator-fe.web.app/)
+* [Notifications Page](https://notifications-page-fe.web.app/)
 
 ### Local Setup
 
@@ -19,6 +20,7 @@ yarn
 # Configured in app specific webpack config
 # QR Code Component App -> localhost:3001
 # Advice Generator App -> localhost:3002
+# Notifications Page -> localhost:3003
 
 yarn start
 ```
