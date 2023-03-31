@@ -9,10 +9,10 @@ export function NotificationExtraData (props: NotificationExtraDataPropsType) {
   return (
     <>
     {type == "group" && (
-      <span className="font-bold text-blue hover:cursor-pointer px-1">{content}</span>
+      <span className="font-bold text-blue hover:cursor-pointer pr-1">{content}</span>
     )}
     {type == "post" && (
-      <span className="font-bold text-very-dark-blue hover:text-blue cursor-pointer px-1">{content}</span>
+      <span className="font-bold text-very-dark-blue hover:text-blue cursor-pointer pr-1">{content}</span>
     )}
     </>
   )

@@ -23,10 +23,10 @@ export function NotificationCard(props: NotificationCardPropsType) {
         <div className="flex flex-row justify-between my-2">
           <div>
             <p>
-              <span className="font-bold text-very-dark-blue hover:text-blue cursor-pointer px-1">
+              <span className="font-bold text-very-dark-blue hover:text-blue cursor-pointer pr-1">
                 {notification.userName}
               </span>
-              <span className="text-clip text-dark-grayish-blue px-1">
+              <span className="text-clip text-dark-grayish-blue pr-1">
                 {notification.content}
               </span>
               <NotificationExtraData extraData={notification.extraData} />
