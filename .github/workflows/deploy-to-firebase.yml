@@ -21,30 +21,11 @@ jobs:
         with:
           node-version: "18.12.1"
 
-      - name: Git Diff in Challenges
-        id: diff_challenges
-        run: | 
-          if ! `git diff --quiet HEAD~ HEAD challenges`
-          then
-            echo "diff=1"  >> $GITHUB_OUTPUT
-          fi
-
-      - name: Git Diff in Config files
-        id: diff_package
-        run: |
-          if ! `git diff --quiet HEAD~ HEAD *.json .firebaserc`
-          then
-            echo "diff=1"  >> $GITHUB_OUTPUT
-          fi
-
       - name: Install Dependencies
-        if: ${{(steps.diff_challenges.outputs.diff) || (steps.diff_package.outputs.diff)}}
         run: yarn
 
       - name: Build Apps
-        if: ${{(steps.diff_challenges.outputs.diff) || (steps.diff_package.outputs.diff)}}
         run: yarn build
 
       - name: Deploy to Firebase
-        if: ${{(steps.diff_challenges.outputs.diff) || (steps.diff_package.outputs.diff)}}
         run:  yarn deploy --token "$FIREBASE_TOKEN"
