@@ -1,0 +1,11 @@
+{
+  "name": "age-calculator",
+  "version": "1.0.0",
+  "description": "Age Calculator App from Frontend Mentor Challenges",
+  "main": "index.tsx",
+  "private": true,
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production"
+  }
+}
