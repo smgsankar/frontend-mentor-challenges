@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AgeCalculatorCard } from "./components/AgeCalculatorCard";
 import { AgeDisplay } from "./components/AgeDisplay";
 import { DateInput } from "./components/DateInput";
@@ -55,6 +55,20 @@ export function App() {
 
     setAge({ days: ageDay.toString(), months: ageMonth.toString(), years: ageYear.toString() });
   }
+
+  useEffect(() => {
+    const calculateAgeOnEnter = (event: KeyboardEvent) => {
+      if(event.key === "Enter") {
+        calculateAge();
+      }
+    }
+
+    window.addEventListener("keydown", calculateAgeOnEnter);
+
+    return () => {
+      window.removeEventListener("keydown", calculateAgeOnEnter);
+    }
+  }, [calculateAge]);
 
   return (
     <PageContainer>
