@@ -7,8 +7,9 @@ The main idea is to manage the list of challenges from Frontend Mentor in challe
 Challenges Completed so far,
 
 * [QR Code Component](https://qr-component-fe.web.app/)
-* [Advice Generator](https://advice-generator-fe.web.app/)
+* [Advice Generator App](https://advice-generator-fe.web.app/)
 * [Notifications Page](https://notifications-page-fe.web.app/)
+* [Age Calculator App](https://age-calculator-fe.web.app/)
 
 ### Local Setup
 
@@ -18,9 +19,10 @@ yarn
 
 # Start the applications in localhost in the respective ports
 # Configured in app specific webpack config
-# QR Code Component App -> localhost:3001
+# QR Code Component -> localhost:3001
 # Advice Generator App -> localhost:3002
 # Notifications Page -> localhost:3003
+# Age Calculator App -> localhost:3004
 
 yarn start
 ```
