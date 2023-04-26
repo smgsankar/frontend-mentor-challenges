@@ -13,6 +13,9 @@
         ],
         "notifications-page-fe": [
           "notifications-page-fe"
+        ],
+        "age-calculator-fe": [
+          "age-calculator-fe"
         ]
       }
     }

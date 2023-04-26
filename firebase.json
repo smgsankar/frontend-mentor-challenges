@@ -11,6 +11,10 @@
     {
       "target": "notifications-page-fe",
       "public": "challenges/notifications-page/dist"
+    },
+    {
+      "target": "age-calculator-fe",
+      "public": "challenges/age-calculator-app/dist"
     }
   ]
 }
