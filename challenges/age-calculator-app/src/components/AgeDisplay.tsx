@@ -7,7 +7,7 @@ interface AgeDisplayPropsType {
 
 export function AgeDisplay({age}: AgeDisplayPropsType) {
   return (
-    <section className="text-8xl font-extrabold italic leading-[100px]">
+    <section className="text-5xl md:text-8xl font-extrabold italic leading-[50px] md:leading-[100px]">
       <ValueDisplay value={age.years} suffix="years" />
       <ValueDisplay value={age.months} suffix="months" />
       <ValueDisplay value={age.days} suffix="days" />

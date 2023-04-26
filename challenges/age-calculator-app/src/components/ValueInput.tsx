@@ -11,7 +11,7 @@ export function ValueInput(props: ValueInputPropsType) {
   const { value, onChange, error } = input;
 
   return (
-    <div className="flex flex-col w-[160px]">
+    <div className="flex flex-col w-[100px] md:w-[160px]">
       <label className="text-sm tracking-[4px] font-bold text-smokey-grey">
         {label}
       </label>
@@ -20,7 +20,7 @@ export function ValueInput(props: ValueInputPropsType) {
         placeholder={placeholder}
         value={value}
         onChange={onChange}
-        className="text-3xl font-bold text-off-black border-light-grey border-[1px] rounded-lg my-1 px-5 py-3 caret-purple focus:border-purple focus:outline-none"
+        className="text-3xl font-bold text-off-black border-light-grey border-[1px] rounded-lg my-1 p-2 md:px-5 md:py-3 caret-purple focus:border-purple focus:outline-none"
       />
       {error && (
         <span className="text-sm text-light-red font-light italic">

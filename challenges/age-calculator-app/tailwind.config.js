@@ -17,6 +17,9 @@ module.exports = {
         "off-black": "hsl(0, 0%, 8%)",
       },
     },
+    screens: {
+      md: "900px",
+    }
   },
   variants: {
     extend: {},
