@@ -7,10 +7,13 @@ export function useNumericInput(maxLen: number) {
   const onChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { value } = e.target;
 
-    if (isNaN(Number(value))) return;
+    if (isNaN(Number(value)) || !value) {
+      setValue("");
+      return;
+    }
 
     if (value.length <= maxLen) {
-      setValue(value);
+      setValue(Number(value).toString());
     }
   };
 

@@ -1,11 +1,16 @@
+import { AgeType } from "../utils/ageCalculator.types";
 import { ValueDisplay } from "./ValueDisplay";
 
-export function AgeDisplay() {
+interface AgeDisplayPropsType {
+  age: AgeType;
+}
+
+export function AgeDisplay({age}: AgeDisplayPropsType) {
   return (
     <section className="text-8xl font-extrabold italic leading-[100px]">
-      <ValueDisplay value="--" suffix="years" />
-      <ValueDisplay value="--" suffix="months" />
-      <ValueDisplay value="--" suffix="days" />
+      <ValueDisplay value={age.years} suffix="years" />
+      <ValueDisplay value={age.months} suffix="months" />
+      <ValueDisplay value={age.days} suffix="days" />
     </section>
   );
 }

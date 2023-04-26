@@ -1,11 +1,17 @@
+import { useDateInput } from "../utils/useDateInput";
 import { ValueInput } from "./ValueInput";
 
-export function DateInput() {
+interface DateInputPropsType {
+  dateInput: ReturnType<typeof useDateInput>;
+}
+
+export function DateInput({ dateInput }: DateInputPropsType) {
+  const { dayInput, monthInput, yearInput } = dateInput;
   return (
     <section className="flex flex-row gap-6">
-      <ValueInput label="DAY" placeholder="DD" />
-      <ValueInput label="MONTH" placeholder="MM" />
-      <ValueInput label="YEAR" placeholder="YYYY" />
+      <ValueInput label="DAY" placeholder="DD" input={dayInput} />
+      <ValueInput label="MONTH" placeholder="MM" input={monthInput} />
+      <ValueInput label="YEAR" placeholder="YYYY" input={yearInput} />
     </section>
   );
 }
