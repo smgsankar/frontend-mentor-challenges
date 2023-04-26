@@ -27,7 +27,13 @@ yarn
 yarn start
 ```
 
+### Adding a new application to the mono repo
+
+1. Add a new target in Firebase Hosting from Firebase Console
+2. Add a reference to the target in `.firebaserc`
+3. Add a reference to the application build directory for that particular target in `firebase.json`
+4. Trigger the CD by updating the changes to master on remote
 
 ### Feedback
 
-Since this repository is for experimental purposes, I am open to any feedback or suggestion over the code or practices. If you have any feedback, feel free to write to me on [LinkedIn](https://www.linkedin.com/in/smgsankar)
+Since this repository is for experimental purposes, I am open to any feedback or suggestion over the code or practices. Any feedback is appreciated, feel free to ping me on [LinkedIn](https://www.linkedin.com/in/smgsankar)
