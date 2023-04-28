@@ -1,0 +1,11 @@
+{
+  "name": "expenses-chart-component",
+  "version": "1.0.0",
+  "description": "Expenses Chart Component from Frontend Mentor Challenges",
+  "main": "index.tsx",
+  "private": true,
+  "scripts": {
+    "start": "webpack serve --mode development",
+    "build": "webpack --mode production"
+  }
+}
