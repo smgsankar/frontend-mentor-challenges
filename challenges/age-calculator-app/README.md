@@ -70,6 +70,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Not yet]()
+- Frontend Mentor - [@smgsankar](https://www.frontendmentor.io/profile/smgsankar)
+- LinkedIn - [@smgsankar](https://www.linkedin.com/in/smgsankar)
+- Github - [@smgsankar](https://www.github.com/smgsankar)
