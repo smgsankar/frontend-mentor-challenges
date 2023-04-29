@@ -1,4 +1,4 @@
-export const mockData = [
+export const DATA = [
   {
     day: "mon",
     amount: 17.45,
@@ -28,3 +28,11 @@ export const mockData = [
     amount: 25.48,
   },
 ];
+
+export const COLORS: Record<string, string> = {
+  softRed: "hsl(10, 79%, 65%)",
+  softRedHovered: "hsl(10, 79%, 70%)",
+  cyan: "hsl(186, 34%, 60%)",
+  cyanHovered: "hsl(186, 34%, 70%)",
+  white: "hsl(0, 0%, 100%)",
+};

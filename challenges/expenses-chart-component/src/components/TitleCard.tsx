@@ -2,7 +2,7 @@ import { Card } from "./Card";
 
 export function TitleCard() {
   return (
-    <Card background="soft-red">
+    <Card background="softRed">
       <header className="flex flex-row justify-between text-white">
         <div className="flex flex-col">
           <h1 className="font-extralight">My balance</h1>
