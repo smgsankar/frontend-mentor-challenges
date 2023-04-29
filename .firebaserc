@@ -16,6 +16,9 @@
         ],
         "age-calculator-fe": [
           "age-calculator-fe"
+        ],
+        "expenses-chart-fe": [
+          "expenses-chart-fe"
         ]
       }
     }

@@ -15,6 +15,10 @@
     {
       "target": "age-calculator-fe",
       "public": "challenges/age-calculator-app/dist"
+    },
+    {
+      "target": "expenses-chart-fe",
+      "public": "challenges/expenses-chart-component/dist"
     }
   ]
 }
