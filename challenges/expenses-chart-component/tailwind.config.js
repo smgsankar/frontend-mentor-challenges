@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ["DMSans"],
+        dmsans: ["DMSans"],
       },
       colors: {
         "soft-red": "hsl(10, 79%, 65%)",
