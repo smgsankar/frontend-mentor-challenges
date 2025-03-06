@@ -1,12 +1,18 @@
+function decorateValue(number) {
+  return Number(number) < 10 ? `0${number}` : `${number}`;
+}
+
 class CalendarCard extends HTMLElement {
   static observedAttributes = ['mode', 'value'];
 
   mode = '';
   value = '';
 
+  card = null;
   topHalf = null;
   bottomHalf = null;
   label = null;
+  pending = true;
 
   constructor() {
     super();
@@ -27,11 +33,11 @@ class CalendarCard extends HTMLElement {
     this.label = document.createElement('p');
     this.label.classList.add('label');
 
-    const card = document.createElement('div');
-    card.classList.add('card');
+    this.card = document.createElement('div');
+    this.card.classList.add('card');
 
-    card.append(this.topHalf, this.bottomHalf);
-    wrapper.append(card, this.label);
+    this.card.append(this.topHalf, this.bottomHalf);
+    wrapper.append(this.card, this.label);
 
     this.append(wrapper);
   }
@@ -41,10 +47,41 @@ class CalendarCard extends HTMLElement {
     this.label.textContent = this.mode;
   }
 
+  animateValue(nextValue) {
+    const topHalf = document.createElement('div');
+    topHalf.classList.add('top', 'z0', 'new');
+    topHalf.textContent = nextValue;
+
+    const bottomHalf = document.createElement('div');
+    bottomHalf.classList.add('bottom', 'z2', 'deg90neg', 'new');
+    bottomHalf.textContent = nextValue;
+
+    this.card.append(topHalf, bottomHalf);
+    this.topHalf.classList.add('upflip');
+    bottomHalf.classList.add('downflip');
+
+    setTimeout(() => {
+      this.topHalf.textContent = nextValue;
+      this.bottomHalf.textContent = nextValue;
+      this.topHalf.classList.remove('upflip');
+      bottomHalf.classList.remove('downflip');
+      this.card.removeChild(topHalf);
+      this.card.removeChild(bottomHalf);
+    }, 400);
+  }
+
   updateValue() {
     if (!this.topHalf || !this.bottomHalf) return;
-    this.topHalf.textContent = this.value;
-    this.bottomHalf.textContent = this.value;
+    const currentValue = this.topHalf.textContent;
+    const nextValue = decorateValue(this.value);
+    if (currentValue === nextValue) return;
+    if (this.pending) {
+      this.topHalf.textContent = nextValue;
+      this.bottomHalf.textContent = nextValue;
+      this.pending = false;
+    } else {
+      this.animateValue(nextValue);
+    }
   }
 
   connectedCallback() {

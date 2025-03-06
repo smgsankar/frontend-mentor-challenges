@@ -85,6 +85,7 @@ footer {
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 150px;
@@ -103,64 +104,91 @@ footer {
 }
 
 .top {
+  top: 0;
   z-index: 1;
   align-items: flex-end;
   background-color: var(--color-top-bg);
   color: var(--color-top-accent);
   border-radius: 8px 8px 0px 0px;
+  transform-origin: center bottom;
+  overflow: hidden;
 }
 
 .bottom {
+  bottom: 0;
+  overflow: hidden;
   align-items: flex-start;
   background-color: var(--color-bottom-bg);
   border-radius: 0px 0px 8px 8px;
   color: var(--color-bottom-accent);
+  transform-origin: center top;
 }
 
-.top::before,
-.top::after,
-.bottom::before,
-.bottom::after {
+.card::before,
+.card::after {
+  z-index: 10;
   position: absolute;
   content: '';
-  width: 100%;
-  height: 6px;
-  width: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 12px;
+  width: 8px;
   background-color: var(--color-very-dark-blue);
 }
 
-.top::before .top::after {
-  bottom: 0;
-}
-
-.bottom::before .bottom:after {
-  top: 0;
-}
-
-.top::before,
-.bottom::before {
+.card::before {
   left: 0;
+  border-radius: 0 100% 100% 0;
 }
 
-.top::after,
-.bottom::after {
+.card::after {
   right: 0;
+  border-radius: 100% 0 0 100%;
 }
 
-.top::before {
-  border-top-right-radius: 100%;
+.z0 {
+  z-index: 0;
 }
 
-.top::after {
-  border-top-left-radius: 100%;
+.z2 {
+  z-index: 2;
 }
 
-.bottom::before {
-  border-bottom-right-radius: 100%;
-  ;
+.new {
+  position: absolute;
+  height: 50%;
+  width: inherit;
 }
 
-.bottom::after {
-  border-bottom-left-radius: 100%;
-  ;
+.deg90neg {
+  transform: rotateX(-90deg);
+}
+
+.upflip {
+  animation: upflip 0.2s linear forwards;
+}
+
+.downflip {
+  animation: downflip 0.2s linear forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes upflip {
+  0% {
+    transform: rotateX(0deg);
+  }
+
+  100% {
+    transform: rotateX(90deg);
+  }
+}
+
+@keyframes downflip {
+  0% {
+    transform: rotateX(-90deg);
+  }
+
+  100% {
+    transform: rotateX(0deg);
+  }
 }
